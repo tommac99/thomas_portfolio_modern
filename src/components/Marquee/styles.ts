@@ -28,7 +28,7 @@ const appear = keyframes`
 const appearMobile = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(160px);
   }
   90% {
     opacity: 1;
@@ -67,8 +67,8 @@ export const Container = styled.div`
   animation: ${appear} 2000ms 2000ms ease-in-out forwards;
 
   @media (max-width: 768px) {
-    height: 100px;
-    transform: translateY(100px);
+    height: 160px;
+    transform: translateY(160px);
     animation: ${appearMobile} 2000ms 2000ms ease-in-out forwards;
   }
 `;

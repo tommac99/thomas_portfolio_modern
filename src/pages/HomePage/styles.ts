@@ -11,7 +11,7 @@ const slideIn = keyframes`
 
 const rollIn = keyframes`
   0% {
-    transform: translateX(-200px) rotate(360deg);
+    transform: translateX(-400px) rotate(360deg);
   }
   100% {
     transform: translateX(0px) rotate(0deg);
@@ -81,7 +81,7 @@ export const Container = styled.div`
     margin-right: 10px;
     cursor: pointer;
     box-shadow: 8px 8px 24px #c4c4c4, -8px -8px 24px #ffffff;
-    transform: translateX(-200px) rotate(360deg);
+    transform: translateX(-400px) rotate(360deg);
     animation: ${rollIn} 1000ms 1000ms ease-in-out forwards;
     transition: box-shadow 150ms ease-in-out;
     border-radius: 50%;

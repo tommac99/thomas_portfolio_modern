@@ -10,6 +10,15 @@ const dropDown = keyframes`
   }
 `;
 
+const slideInRight = keyframes`
+  0% {
+    transform: translateX(calc(400px))
+  }
+  100% {
+    transform: translateX(0px)
+  }
+`;
+
 export const Container = styled.div`
   position: relative;
   width: 100%;
@@ -19,11 +28,11 @@ export const Container = styled.div`
   justify-content: center;
   transform: translateY(calc(-50vh - 200px));
   animation: ${dropDown} 600ms 1600ms ease-in-out forwards;
-  /* 
+
   @media (max-width: 768px) {
-    height: 400px;
-    align-items: flex-start;
-  } */
+    transform: translateX(400px);
+    animation: ${slideInRight} 600ms 1600ms ease-in-out forwards;
+  }
 
   .arrow {
     box-shadow: 4px 4px 8px #c4c4c4, -4px -4px 8px #ffffff;
@@ -114,10 +123,9 @@ export const Container = styled.div`
     justify-content: center;
     padding: 40px 0 120px 0;
 
-    /* @media (max-width: 768px) {
-      padding: 0 0 120px 0;
-      height: 400px;
-    } */
+    @media (max-width: 768px) {
+      padding: 40px 0 80px 0;
+    }
   }
 
   .slide.selected .project-slide > div {
