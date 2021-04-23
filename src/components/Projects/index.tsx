@@ -14,10 +14,7 @@ export const Projects: FC = () => {
     <Container>
       <div className="carousel-container">
         <Carousel
-          onChange={(index, item) => {
-            console.log("index:", index);
-            console.log("item:", item);
-          }}
+          onChange={(_index, _item) => {}}
           swipeable={true}
           // infiniteLoop={true}
           interval={3000}
