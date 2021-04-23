@@ -19,11 +19,11 @@ export const Container = styled.div`
   justify-content: center;
   transform: translateY(calc(-50vh - 200px));
   animation: ${dropDown} 600ms 1600ms ease-in-out forwards;
-
+  /* 
   @media (max-width: 768px) {
     height: 400px;
     align-items: flex-start;
-  }
+  } */
 
   .arrow {
     box-shadow: 4px 4px 8px #c4c4c4, -4px -4px 8px #ffffff;
@@ -41,12 +41,16 @@ export const Container = styled.div`
     &:active {
       transform: scale(0.99) translate(0, -50%);
 
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
         transform: scale(0.99) translate(0);
-      }
+      } */
     }
 
     @media (max-width: 768px) {
+      box-shadow: none;
+    }
+
+    /* @media (max-width: 768px) {
       top: 320px;
       transform: scale(1) translate(0);
       width: 70px;
@@ -61,23 +65,23 @@ export const Container = styled.div`
         width: 70px !important;
         height: 70px !important;
       }
-    }
+    } */
   }
 
   .left-arrow {
     left: 8px;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
       left: 80px;
-    }
+    } */
   }
 
   .right-arrow {
     right: 8px;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
       right: 80px;
-    }
+    } */
   }
 
   .carousel-container {
@@ -96,6 +100,10 @@ export const Container = styled.div`
         ${ThemeColor.background.gray},
         transparent
       );
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .project-slide {
@@ -106,10 +114,10 @@ export const Container = styled.div`
     justify-content: center;
     padding: 40px 0 120px 0;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
       padding: 0 0 120px 0;
       height: 400px;
-    }
+    } */
   }
 
   .slide.selected .project-slide > div {
