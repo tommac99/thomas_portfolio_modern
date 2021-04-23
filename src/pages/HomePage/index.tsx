@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import { Navigation, Text, Projects, Marquee } from "../../components";
+import { Text, Projects, Marquee } from "../../components";
 import { Container } from "./styles";
 import linkedin from "../../assets/lottie/linkedin.json";
 import github from "../../assets/lottie/github.json";
@@ -8,7 +8,6 @@ import github from "../../assets/lottie/github.json";
 export const HomePage = () => {
   return (
     <Container>
-      {/* <Navigation /> */}
       <div className="content">
         <Text variant="h1" className="title">
           Thomas MacFarlaine

@@ -1,8 +1,5 @@
-import React, { FC, useEffect, useState } from "react";
-import { useScrollContext } from "../../hooks";
-import { Link, animateScroll as scroll } from "react-scroll";
-import profileImage from "../../assets/images/profile.jpg";
-import { useMediaQuery } from "@react-hook/media-query";
+import { FC, useEffect, useState } from "react";
+// import { useMediaQuery } from "@react-hook/media-query";
 
 import { Container } from "./styles";
 import { Text } from "../index";
@@ -23,7 +20,7 @@ export const Project: FC<{ item: IProject }> = ({
   item: { title, description, link, image, repo, position },
 }) => {
   const [hasLoaded, setHasLoaded] = useState(false);
-  const matches = useMediaQuery("only screen and (max-width: 680px)");
+  // const matches = useMediaQuery("only screen and (max-width: 680px)");
 
   useEffect(() => {
     setTimeout(() => {

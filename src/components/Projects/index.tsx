@@ -1,12 +1,7 @@
-import React, { FC, useEffect, useState } from "react";
-import { useScrollContext } from "../../hooks";
-import { Link, animateScroll as scroll } from "react-scroll";
-import profileImage from "../../assets/images/profile.jpg";
-import { useMediaQuery } from "@react-hook/media-query";
+import { FC } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Container } from "./styles";
-import { Text } from "../Text";
 import { Project } from "../Project";
 import Lottie from "react-lottie";
 import left from "../../assets/lottie/left.json";
@@ -15,8 +10,6 @@ import { Carousel } from "react-responsive-carousel";
 import { projects } from "./data";
 
 export const Projects: FC = () => {
-  const matches = useMediaQuery("only screen and (max-width: 680px)");
-
   return (
     <Container>
       <div className="carousel-container">
