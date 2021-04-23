@@ -43,7 +43,7 @@ export const Container = styled.div`
       width: 100%;
       max-width: 600px;
       min-height: 0;
-      padding: 40px 20px 0 20px;
+      padding: 40px 20px;
     }
 
     .title {

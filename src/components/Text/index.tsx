@@ -4,7 +4,7 @@ import { TextContainer } from "./styles";
 
 interface ITextProps {
   children: string | ReactChild;
-  variant?: "h1" | "h2" | "h3" | "h4" | "body1" | "body2";
+  variant?: "h1" | "h2" | "h3" | "body1" | "body2";
   color?: "primary" | "secondary";
   weight?: "light" | "normal" | "bold";
   align?: "left" | "center" | "right";
@@ -19,9 +19,8 @@ interface ITextProps {
 
 const variants = {
   h1: 40,
-  h2: 40,
-  h3: 32,
-  h4: 24,
+  h2: 32,
+  h3: 24,
   body1: 16,
   body2: 12,
 };

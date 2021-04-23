@@ -46,7 +46,7 @@ export const Project: FC<{ item: IProject }> = ({
           />
         ) : (
           <div className="card-content">
-            <Text variant="h4" mb={20}>
+            <Text variant="h3" mb={20}>
               {title}
             </Text>
             <Text
